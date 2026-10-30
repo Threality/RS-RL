@@ -6,4 +6,6 @@ The eventual application will combine a Python-based RL and environment layer wi
 
 The project is being developed incrementally. The first milestone is a PPO trainer for a Gymnasium environment with live metrics, checkpointing, and episode replay. Later milestones will add Rust acceleration, custom dashboard layouts, evaluation ladders, Elo tracking, multi-agent environments, and support for a wider range of training systems.
 
+The first environment will be a manually programmed version of the card game High Society. This environment will be developed before broader environment integrations so that the game rules, observations, actions, rewards, and replay representation can be designed and tested directly.
+
 See the [project guide](PROJECT_GUIDE.md) for the architecture, development phases, and implementation recommendations.

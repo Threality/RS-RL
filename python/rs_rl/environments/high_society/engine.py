@@ -49,6 +49,9 @@ class Environment:
         """
 
     def reset(self, seed=randint(0,MAX_SEED)) -> None:
+        """
+        Randomises starting values and preps a game of High Society to be played.
+        """
         self._players: npt.NDArray[np.object_] = np.array(
             [Player() for _ in range(4)], dtype=Player
         )
@@ -57,7 +60,9 @@ class Environment:
         self._shuffle_idx = 0
 
     def step(self, Action) -> None:
-        pass
+        """
+        Processes one agents turn and progresses the game to the next state.
+        """
 
 class Player:
     """
